@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package exmaple.first;
+
+option go_package = "github.com/an7one/tutorial/grpc_for_beginners/firstpb";
+
+message PersonMessage{
+    int32 id = 1;
+    bool is_adult = 2;
+    string name = 3;
+    repeated int32 luck_numbers = 4;
+}
